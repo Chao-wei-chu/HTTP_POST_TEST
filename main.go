@@ -15,7 +15,7 @@ import (
 )
 
 //wfwaf
-//awfawawawawawawawawawawawawawafawfawfawffwawfawfwfwfwf
+//awfawawawawawawawawawawawawawafawfawfawffwawfawfwfwfwfwafw
 func loopfunc() {
 	for {
 		time.Sleep(time.Duration(500) * time.Millisecond)
