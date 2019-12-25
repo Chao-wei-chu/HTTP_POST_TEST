@@ -14,7 +14,8 @@ import (
 	"time"
 )
 
-//waffffffffffffffffffffffffffffqr22222222222gseeeeeeeeeeeeeeeeeeee
+//wfwaf
+//awfawawawawawawawawawawawawaw
 func loopfunc() {
 	for {
 		time.Sleep(time.Duration(500) * time.Millisecond)
