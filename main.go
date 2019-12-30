@@ -85,6 +85,7 @@ func loopfunc() {
 }
 
 func main() {
+	//afwgwaofgalwfglawi
 	fmt.Println("HTTP_POST_TEST start!!")
 	rand.Seed(time.Now().UnixNano())
 	go loopfunc()
