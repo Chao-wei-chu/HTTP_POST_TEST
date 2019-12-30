@@ -17,6 +17,13 @@ import (
 )
 
 func loopfunc() {
+	/*---------------錯誤回收與安全退出-----------------*/
+	defer func() {
+		if err := recover(); err != nil {
+			log.Fatal("[ERROR] ", err, ", Program Shutdown.") //注意! 如果沒有這句，Server仍會運行，但DB掛了
+		}
+	}()
+
 	for {
 		time.Sleep(time.Duration(500) * time.Millisecond)
 		reqBody := `
