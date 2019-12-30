@@ -12,10 +12,10 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"rsc.io/quote"
 )
 
-//wfwafawfwafwafa
-//awfawawawawawawawawawawawawawafawfawfawffwawfawfwfwfwfwafwafawfadfwfafwfwwfawfawfawlgfh
 func loopfunc() {
 	for {
 		time.Sleep(time.Duration(500) * time.Millisecond)
@@ -78,9 +78,11 @@ func loopfunc() {
 }
 
 func main() {
+	fmt.Println("HTTP_POST_TEST start!!")
 	rand.Seed(time.Now().UnixNano())
 	go loopfunc()
 	go loopfunc()
+	fmt.Println(quote.Hello())
 	for {
 
 	}
