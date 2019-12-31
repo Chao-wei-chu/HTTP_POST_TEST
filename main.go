@@ -25,6 +25,7 @@ func loopfunc() {
 	}()
 
 	for {
+		fmt.Println("Slave Loop")
 		time.Sleep(time.Duration(500) * time.Millisecond)
 		reqBody := `
 		"PK01": "IOT2",
@@ -89,10 +90,10 @@ func main() {
 	fmt.Println("HTTP_POST_TEST start!!")
 	rand.Seed(time.Now().UnixNano())
 	//go loopfunc()
-	//go loopfunc()
+	go loopfunc()
 	fmt.Println(quote.Hello())
-	/*
-		for {
-
-		}*/
+	for {
+		fmt.Println("Main Loop")
+		time.Sleep(time.Duration(5000) * time.Millisecond)
+	}
 }
